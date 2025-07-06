@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>An Introduction to Statistical Learning - Summary</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 6px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.2rem;
+    }
+    header p {
+      font-size: 1rem;
+      color: #555;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      border-left: 4px solid #3498db;
+      padding-left: 0.5rem;
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+    ol.toc-list {
+      padding-left: 1rem;
+      list-style: decimal inside;
+    }
+    ol.toc-list li {
+      margin-bottom: 0.5rem;
+    }
+    ol.toc-list a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    ol.toc-list a:hover {
+      text-decoration: underline;
+    }
+    article.chapter {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      background: #fafafa;
+    }
+    .chapter-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .chapter-number {
+      background: #3498db;
+      color: white;
+      font-weight: bold;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      margin-right: 1rem;
+      flex-shrink: 0;
+    }
+    .chapter-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    .chapter-content h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+    .chapter-content p {
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+    ul.techniques-list {
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    ul.techniques-list li {
+      margin-bottom: 0.4rem;
+    }
+    a.github-link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #28a745;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    a.github-link:hover {
+      background-color: #218838;
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+      .chapter-title {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>An Introduction to Statistical Learning</h1>
+      <p>Comprehensive Summary & Analysis</p>
+    </header>
+
+    <section>
+      <h2>Book Overview</h2>
+      <p>
+        <strong>"An Introduction to Statistical Learning"</strong> by Gareth James et al. is a clear, practical guide bridging theory and applied statistical learning.
+      </p>
+      <p>
+        The book emphasizes hands-on learning through R examples, taking readers from fundamental concepts to advanced methods in statistical modeling and machine learning.
+      </p>
+      <p>
+        Repository with notebooks: 
+        <a href="https://github.com/mwizaLys/MINING.git" target="_blank" rel="noopener noreferrer">https://github.com/mwizaLys/MINING.git</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Table of Contents</h2>
+      <ol class="toc-list">
+        <li><a href="#chapter1">Chapter 1: Introduction</a></li>
+        <li><a href="#chapter2">Chapter 2: Linear Regression</a></li>
+        <li><a href="#chapter3">Chapter 3: Classification</a></li>
+        <li><a href="#chapter4">Chapter 4: Resampling Methods</a></li>
+        <li><a href="#chapter5">Chapter 5: Linear Model Selection and Regularization</a></li>
+        <li><a href="#chapter6">Chapter 6: Tree-Based Methods</a></li>
+        <li><a href="#chapter7">Chapter 7: Support Vector Machines</a></li>
+        <li><a href="#chapter8">Chapter 8: Deep Learning</a></li>
+        <li><a href="#chapter9">Chapter 9: Unsupervised Learning</a></li>
+        <li><a href="#chapter10">Chapter 10: Text Mining</a></li>
+      </ol>
+    </section>
+
+    <!-- Chapter 1 -->
+    <article id="chapter1" class="chapter">
+      <div class="chapter-header">
+        <div class="chapter-number">1</div>
+        <div class="chapter-title">Introduction</div>
+      </div>
+      <div class="chapter-content">
+        <h3>Main Ideas</h3>
+        <p>This chapter defines supervised vs unsupervised learning, prediction accuracy, interpretability, bias-variance tradeoff, and overfitting.</p>
+        <h4>Key Concepts</h4>
+        <ul class="techniques-list">
+          <li>Supervised Learning: learning from labeled data</li>
+          <li>Unsupervised Learning: finding patterns without labels</li>
+          <li>Regression vs Classification</li>
+          <li>Bias-Variance Tradeoff</li>
+          <li>Training vs Test Error</li>
+        </ul>
+        <h3>Key Takeaways</h3>
+        <p>Statistical learning focuses on generalizing from data with a tradeoff between accuracy and interpretability.</p>
+        <a href="https://github.com/mwizaLys/MINING.git" class="github-link" target="_blank" rel="noopener noreferrer">View Chapter 1 Notebook</a>
+      </div>
+    </article>
+
+    <!-- Chapter 2 -->
+    <article id="chapter2" class="chapter">
+      <div class="chapter-header">
+        <div class="chapter-number">2</div>
+        <div class="chapter-title">Linear Regression</div>
+      </div>
+      <div class="chapter-content">
+        <h3>Main Ideas</h3>
+        <p>Linear regression models relationships between variables, covering simple and multiple regression, assumptions, diagnostics, and extensions.</p>
+        <h4>Techniques Covered</h4>
+        <ul class="techniques-list">
+          <li>Simple Linear Regression</li>
+          <li>Multiple Linear Regression</li>
+          <li>Least Squares Estimation</li>
+          <li>Hypothesis Testing</li>
+          <li>Residual Analysis</li>
+          <li>Confidence and Prediction Intervals</li>
+        </ul>
+        <h3>Key Takeaways</h3>
+        <p>Linear regression is interpretable and a baseline for complex methods. Understanding assumptions is crucial for correct application.</p>
+        <a href="https://github.com/mwizaLys/MINING.git" class="github-link" target="_blank" rel="noopener noreferrer">View Chapter 2 Notebook</a>
+      </div>
+    </article>
+
+    <!-- Chapter 3 -->
+    <article id="chapter3" class="chapter">
+      <div class="chapter-header">
+        <div class="chapter-number">3</div>
+        <div class="chapter-title">Classification</div>
+      </div>
+      <div class="chapter-content">
+        <h3>Main Ideas</h3>
+        <p>Classification methods predict categorical outcomes using logistic regression, LDA, naive Bayes, and more.</p>
+        <h4>Techniques Covered</h4>
+        <ul class="techniques-list">
+          <li>Logistic Regression</li>
+          <li>Linear Discriminant Analysis (LDA)</li>
+          <li>Quadratic Discriminant Analysis (QDA)</li>
+          <li>Naive Bayes</li>
+          <li>K-Nearest Neighbors (KNN)</li>
+          <li>ROC Curves and AUC</li>
+        </ul>
+        <h3>Key Takeaways</h3>
+        <p>Classification uses specific evaluation metrics; method choice depends on data and application goals.</p>
+        <a href="https://github.com/mwizaLys/MINING.git" class="github-link" target="_blank" rel="noopener noreferrer">View Chapter 3 Notebook</a>
+      </div>
+    </article>
+
+    <!-- Chapter 4 -->
+    <article id="chapter4" class="chapter">
+      <div class="chapter-header">
+        <div class="chapter-number">4</div>
+        <div class="chapter-title">Resampling Methods</div>
+      </div>
+      <div class="chapter-content">
+        <h3>Main Ideas</h3>
+        <p>Resampling like cross-validation and bootstrap are essential for model assessment and hyperparameter tuning.</p>
+        <h4>Techniques Covered</h4>
+        <ul class="techniques-list">
+          <li>Cross-Validation (K-fold, leave-one-out, stratified)</li>
+          <li>Bootstrap</li>
+          <li>Validation Set Approach</li>
+          <li>Time Series Cross-Validation</li>
+          <li>Nested Cross-Validation</li>
+        </ul>
+        <h3>Key Takeaways</h3>
+        <p>Resampling helps avoid overfitting and provides reliable performance estimates.</p>
+        <a href="https://github.com/mwizaLys/MINING.git" class="github-link" target="_blank" rel="noopener noreferrer">View Chapter 4 Notebook</a>
+      </div>
+    </article>
+
+    <!-- Chapter 5 -->
+    <article id="chapter5" class="chapter">
+      <div class="chapter-header">
+        <div class="chapter-number">5</div>
+        <div class="chapter-title">Linear Model Selection and Regularization</div>
+      </div>
+      <div class="chapter-content">
+        <h3>Main Ideas</h3>
+        <p>Model selection and regularization tackle overfitting and feature selection using Ridge, Lasso, Elastic Net, and related methods.</p>
+        <h4>Techniques Covered</h4>
+        <ul class="techniques-list">
+          <li>Ridge Regression (L2 penalty)</li>
+          <li>Lasso Regression (L1 penalty)</li>
+          <li>Elastic Net (combination of L1 & L2)</li>
+          <li>Principal Components Regression</li>
+          <li>Partial Least Squares</li>
+          <li>Best Subset Selection</li>
+        </ul>
+        <h3>Key Takeaways</h3>
+        <p>Regularization manages multicollinearity and high-dimensional data; method choice depends on feature selection needs.</p>
+        <a href="https://github.com/mwizaLys/MINING.git" class="github-link" target="_blank" rel="noopener noreferrer">View Chapter 5 Notebook</a>
+      </div>
+    </article>
+
+    <!-- Chapter 6 -->
+    <article id="chapter6" class="chapter">
+      <div class="chapter-header">
+        <div class="chapter-number">6</div>
+        <div class="chapter-title">Tree-Based Methods</div>
+      </div>
+      <div class="chapter-content">
+        <h3>Main Ideas</h3>
+        <p>Tree methods such as decision trees, random forests, and boosting handle nonlinearities and interactions intuitively.</p>
+        <h4>Techniques Covered</h4>
+        <ul class="techniques-list">
+          <li>Decision Trees</li>
+          <li>Pruning</li>
+          <li>Bagging</li>
+          <li>Random Forest</li>
+          <li>Boosting (AdaBoost, Gradient Boosting)</li>
+          <li>Variable Importance</li>
+        </ul>
+        <h3>Key Takeaways</h3>
+        <p>Ensembles improve accuracy and provide insight via variable importance.</p>
+        <a href="https://github.com/mwizaLys/MINING.git" class="github-link" target="_blank" rel="noopener noreferrer">View Chapter 6 Notebook</a>
+      </div>
+    </article>
+
+    <!-- Chapter 7 -->
+    <article id="chapter7" class="chapter">
+      <div class="chapter-header">
+        <div class="chapter-number">7</div>
+        <div class="chapter-title">Support Vector Machines</div>
+      </div>
+      <div class="chapter-content">
+        <h3>Main Ideas</h3>
+        <p>SVMs use margin maximization and kernels to handle linear and nonlinear classification and regression.</p>
+        <h4>Techniques Covered</h4>
+        <ul class="techniques-list">
+          <li>Maximal Margin Classifier</li>
+          <li>Support Vector Classifier (Soft Margin)</li>
+          <li>Kernel Functions (Linear, Polynomial, RBF)</li>
+          <li>Support Vector Regression</li>
+          <li>Multi-class Classification Approaches</li>
+          <li>Hyperparameter Tuning</li>
+        </ul>
+        <h3>Key Takeaways</h3>
+        <p>SVMs excel in complex, high-dimensional problems with proper kernel and tuning.</p>
+        <a href="https://github.com/mwizaLys/MINING.git" class="github-link" target="_blank" rel="noopener noreferrer">View Chapter 7 Notebook</a>
+      </div>
+    </article>
+
+    <!-- Chapter 8 -->
+    <article id="chapter8" class="chapter">
+      <div class="chapter-header">
+        <div class="chapter-number">8</div>
+        <div class="chapter-title">Deep Learning</div>
+      </div>
+      <div class="chapter-content">
+        <h3>Main Ideas</h3>
+        <p>Deep learning uses neural networks with many layers to model complex patterns in data.</p>
+        <h4>Techniques Covered</h4>
+        <ul class="techniques-list">
+          <li>Neural Networks (Perceptrons, MLPs)</li>
+          <li>Backpropagation</li>
+          <li>Activation Functions (ReLU, Sigmoid, Tanh)</li>
+          <li>Convolutional Neural Networks</li>
+          <li>Recurrent Neural Networks</li>
+          <li>Regularization (Dropout, Batch Norm)</li>
+        </ul>
+        <h3>Key Takeaways</h3>
+        <p>Deep learning is powerful for large, complex datasets but requires careful design and resources.</p>
+        <a href="https://github.com/mwizaLys/MINING.git" class="github-link" target="_blank" rel="noopener noreferrer">View Chapter 8 Notebook</a>
+      </div>
+    </article>
+
+    <!-- Chapter 9 -->
+    <article id="chapter9" class="chapter">
+      <div class="chapter-header">
+        <div class="chapter-number">9</div>
+        <div class="chapter-title">Unsupervised Learning</div>
+      </div>
+      <div class="chapter-content">
+        <h3>Main Ideas</h3>
+        <p>Unsupervised learning discovers patterns without labels through clustering, dimensionality reduction, and association rules.</p>
+        <h4>Techniques Covered</h4>
+        <ul class="techniques-list">
+          <li>K-Means Clustering</li>
+          <li>Hierarchical Clustering</li>
+          <li>Principal Component Analysis (PCA)</li>
+          <li>Independent Component Analysis (ICA)</li>
+          <li>t-SNE</li>
+          <li>Association Rules</li>
+        </ul>
+        <h3>Key Takeaways</h3>
+        <p>Unsupervised learning is critical for exploratory data analysis and feature extraction.</p>
+        <a href="https://github.com/mwizaLys/MINING.git" class="github-link" target="_blank" rel="noopener noreferrer">View Chapter 9 Notebook</a>
+      </div>
+    </article>
+
+    <!-- Chapter 10 -->
+    <article id="chapter10" class="chapter">
+      <div class="chapter-header">
+        <div class="chapter-number">10</div>
+        <div class="chapter-title">Text Mining</div>
+      </div>
+      <div class="chapter-content">
+        <h3>Main Ideas</h3>
+        <p>Text mining applies statistical learning to text data, addressing challenges like high dimensionality and sparsity.</p>
+        <h4>Techniques Covered</h4>
+        <ul class="techniques-list">
+          <li>Text Preprocessing (Tokenization, Stemming, Lemmatization)</li>
+          <li>Bag-of-Words Model</li>
+          <li>TF-IDF Weighting</li>
+          <li>Topic Modeling (LDA)</li>
+          <li>Sentiment Analysis</li>
+          <li>Word Embeddings</li>
+        </ul>
+        <h3>Key Takeaways</h3>
+        <p>Effective text mining depends on proper preprocessing, feature engineering, and algorithm choice.</p>
+        <a href="https://github.com/mwizaLys/MINING.git" class="github-link" target="_blank" rel="noopener noreferrer">View Chapter 10 Notebook</a>
+      </div>
+    </article>
+
+  </div>
+</body>
+</html>
